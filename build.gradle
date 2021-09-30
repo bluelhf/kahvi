@@ -1,0 +1,27 @@
+plugins {
+    id 'java-library'
+}
+
+group 'blue.lhf'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'blue.lhf.kahvi.cli.KahviCLI'
+        )
+    }
+}
