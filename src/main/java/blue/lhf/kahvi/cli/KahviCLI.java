@@ -9,7 +9,7 @@ public class KahviCLI {
         System.out.printf("""
                 welcome to kahvi!
                    java-based interpreted language
-                loading kahvi-cli v
+                loading kahvi-cli
                 """);
     }
 }
