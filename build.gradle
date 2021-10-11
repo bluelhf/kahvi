@@ -19,11 +19,13 @@ test {
 }
 
 jar {
-    //noinspection GroovyAssignabilityCheck
-    manifest {
-        attributes(
-                'Main-Class': 'blue.lhf.kahvi.cli.KahviCLI',
-                'Version': project.version
-        )
-    }
+    manifest.from(new File(
+            project.buildDir,
+            "resources/main/META-INF/MANIFEST.MF"
+    ))
+}
+
+processResources {
+    include '**/MANIFEST.MF'
+    expand project.properties
 }

@@ -15,7 +15,7 @@ public class KahviCLI {
                 loading kahvi-cli v%s
                 """, ProjectUtils.getManifest()
                 .getMainAttributes()
-                .getValue("Version")
+                .getValue("Implementation-Version")
         );
     }
 }

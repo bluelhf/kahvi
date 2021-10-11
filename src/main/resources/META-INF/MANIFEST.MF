@@ -1,0 +1,2 @@
+Main-Class: blue.lhf.kahvi.cli.KahviCLI
+Implementation-Version: ${version}
